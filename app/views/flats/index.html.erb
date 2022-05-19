@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      <%= @flats.each do |flat| %>
+        <div class="col p-5">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%= flat.name %></h5>
+              <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+              <img src="https://source.unsplash.com/random"alt="" class="img-fluid">
+              <p class="card-text"><%=flat.description%></p>
+              <p class="card-text bold"><strong><%= flat.price_per_night %></strong></a>
+              <p class="card-text bold"><strong><%= flat.number_of_guests  %></strong></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
